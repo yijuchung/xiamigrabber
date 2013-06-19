@@ -1,0 +1,11 @@
+F:\project\xiamigrabber\xiamigrabber\bin\Release\xiamigrabber.exe.config
+F:\project\xiamigrabber\xiamigrabber\bin\Release\xiamigrabber.exe
+F:\project\xiamigrabber\xiamigrabber\bin\Release\xiamigrabber.pdb
+F:\project\xiamigrabber\xiamigrabber\bin\Release\taglib-sharp.dll
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.error.resources
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.main.resources
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.Properties.Resources.resources
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.csproj.GenerateResource.Cache
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.exe
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.pdb
+F:\project\xiamigrabber\xiamigrabber\obj\Release\xiamigrabber.csprojResolveAssemblyReference.cache
