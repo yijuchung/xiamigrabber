@@ -81,6 +81,8 @@ namespace xiamigrabber
             string s = reader.ReadToEnd();
             data.Close();
             reader.Close();
+
+            //appendText(s + Environment.NewLine);
             return s;
         }
 
@@ -122,7 +124,13 @@ namespace xiamigrabber
 
         private ArrayList getUrlList(String sUrl)
         {
+            //appendText(sUrl);
             String ss = getResp(sUrl);
+            if (ss == "")
+            {
+                appendText("(ID error ?)"+Environment.NewLine);
+            }
+
             ArrayList al = new ArrayList();
 
             XmlDocument xml = new XmlDocument();
@@ -264,7 +272,7 @@ namespace xiamigrabber
             }
             else if (getOptions() == 2)
             {
-                sSubDir = id.Text;
+                sSubDir = "\\" + id.Text;
             }
 
             String sDir = basedir.Text + sSubDir;
@@ -316,7 +324,12 @@ namespace xiamigrabber
                 if (id3.Checked)
                 {
                     appendText("Update ID3 tag..." + Environment.NewLine);
-                    updateID3(sFileName, d, iNumofTrack);
+                    try
+                    {
+                        updateID3(sFileName, d, iNumofTrack);
+                    }catch(Exception ex){
+                        appendText(ex.ToString() + Environment.NewLine);
+                    }
                     appendText("Update ID3 tag...Finished" + Environment.NewLine);
                 }
 
